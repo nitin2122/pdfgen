@@ -1,16 +1,103 @@
-# React + Vite
+# PDFGen Suite Pro 📄✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive, production-grade document management and PDF processing platform. Built for speed, efficiency, and professional-level document handling.
 
-Currently, two official plugins are available:
+[![GitHub license](https://img.shields.io/github/license/nitin2122/pdfgen)](https://github.com/nitin2122/pdfgen/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/nitin2122/pdfgen)](https://github.com/nitin2122/pdfgen/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/nitin2122/pdfgen)](https://github.com/nitin2122/pdfgen/issues)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+Check out the live application here: [https://pdfgen-suite-pro.web.app](https://pdfgen-suite-pro.web.app)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🔥 Features
 
-## Expanding the ESLint configuration
+### 🛠️ Advanced PDF Processing
+- **PDF Conversion**: Seamlessly convert images, Word documents (`.docx`), and PowerPoint presentations (`.pptx`) to high-quality PDF files.
+- **PDF Editing**: Modify existing PDF documents, add text, and reorder pages with ease.
+- **Optical Character Recognition (OCR)**: Extract text from images and scanned documents using integrated `Tesseract.js` technology.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📝 Professional Invoice Generation
+- **Dynamic Forms**: Create professional invoices with custom fields, branding, and real-time previews.
+- **Export to PDF**: Generate pixel-perfect PDF invoices ready for download or sharing.
+
+### 🔐 Secure & Personalized
+- **Firebase Authentication**: Secure Google Sign-In and email/password authentication.
+- **User History**: Keep track of your processed documents and generation history with Firestore-backed data persistence.
+- **Responsive Design**: A premium, dark-mode inspired UI that looks stunning on mobile, tablet, and desktop.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Styling**: Vanilla CSS with modern Glassmorphism & Micro-animations
+- **Backend/Auth**: [Firebase](https://firebase.google.com/) (Firestore, Auth, Hosting)
+- **Document Libraries**:
+  - `pdf-lib` for PDF manipulation
+  - `docx` & `mammoth` for Word processing
+  - `pptxgenjs` for PowerPoint generation
+  - `tesseract.js` for OCR
+  - `html2canvas` for UI-to-image exports
+
+---
+
+## 📦 Installation & Setup
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/nitin2122/pdfgen.git
+   cd pdfgen
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Environment Variables**:
+   Create a `.env` file in the root directory and add your Firebase configuration:
+   ```env
+   VITE_FIREBASE_API_KEY=your_api_key
+   VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+   VITE_FIREBASE_PROJECT_ID=your_project_id
+   VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+   VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+   VITE_FIREBASE_APP_ID=your_app_id
+   ```
+
+4. **Run in Development Mode**:
+   ```bash
+   npm run dev
+   ```
+
+5. **Build for Production**:
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 🏗️ Deployment
+
+The project is configured for one-click deployment to **Firebase Hosting**.
+
+```bash
+npm run build
+firebase deploy
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Built with ❤️ by [Nitin](https://github.com/nitin2122)
